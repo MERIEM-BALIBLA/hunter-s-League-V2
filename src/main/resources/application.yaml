@@ -1,0 +1,66 @@
+#spring:
+#
+#  docker:
+#    compose:
+#      file: src/main/docker/compose.yaml
+#      enabled: true
+#      lifecycle-management: start_only
+#
+#  jpa:
+#    properties:
+#      hibernate:
+#        default_schema: public
+#
+#
+#  liquibase:
+#    change-log: db/changelog/master.yaml
+#
+#server:
+#  port: 8443
+#  ssl:
+#    key-alias: baeldung
+#    key-store: classpath:keystore.p12
+#    key-store-password: changeit
+#    key-store-type: PKCS12
+#    key-password: changeit
+#
+#keycloak:
+#  realm: meriem
+#  auth-server-url: http://localhost:8080
+#  resource: hunterLeague
+#  credentials:
+#    secret: 3W3GLicnmRiwX7KQSoOeTKTD3CNHpqC8
+#  principal-attribute: meriem
+
+spring:
+
+  docker:
+    compose:
+      file: src/main/docker/compose.yaml
+      enabled: true
+      lifecycle-management: start_only
+
+  jpa:
+    properties:
+      hibernate:
+        default_schema: public
+
+
+  liquibase:
+    change-log: db/changelog/master.yaml
+
+server:
+  port: 8443
+  ssl:
+    key-alias: baeldung
+    key-store: classpath:keystore.p12
+    key-store-password: changeit
+    key-store-type: PKCS12
+    key-password: changeit
+keycloak:
+      realm: meriem
+      auth-server-url: http://localhost:8080
+      resource: hunterLeague
+      credentials:
+        secret: 3W3GLicnmRiwX7KQSoOeTKTD3CNHpqC8
+      principal-attribute: meriem

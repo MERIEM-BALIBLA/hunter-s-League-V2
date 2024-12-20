@@ -30,7 +30,7 @@
         <java.version>17</java.version>
         <sonar.projectKey>hunterleagues</sonar.projectKey>
         <sonar.host.url>http://host.docker.internal:9000</sonar.host.url>
-        <sonar.token>sqp_9360c539e71249e4385a0d5e8f629c82cc7a9fb5</sonar.token>
+        <sonar.token>sqp_4909e2b72896c3cd466d4f3e9ff248515b0123d2</sonar.token>
     </properties>
 
 

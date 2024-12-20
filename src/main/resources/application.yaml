@@ -9,7 +9,6 @@ spring:
       hibernate:
         default_schema: public
 
-
   docker:
     compose:
       file: src/main/docker/compose.yaml

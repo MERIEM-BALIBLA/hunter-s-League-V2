@@ -1,8 +1,7 @@
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
-#    url: jdbc:postgresql://host.docker.internal:5433/samurai
-    url: jdbc:postgresql://samurai_db:5433/samurai
+    url: jdbc:postgresql://host.docker.internal:5433/samurai
     username: samurai
     password: password
   jpa:
@@ -13,7 +12,7 @@ spring:
   docker:
     compose:
       file: src/main/docker/compose.yaml
-      enabled: false
+      enabled: true
       lifecycle-management: start_only
 
 liquibase:

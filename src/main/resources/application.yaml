@@ -15,8 +15,8 @@ spring:
       enabled: true
       lifecycle-management: start_only
 
-liquibase:
-  change-log: db/changelog/master.yaml
+  liquibase:
+    change-log: db/changelog/master.yaml
 
 server:
   port: 8443

@@ -19,7 +19,7 @@ spring:
     change-log: db/changelog/master.yaml
 
 server:
-  port: 8443
+  port: 8080
   ssl:
     key-alias: baeldung
     key-store: classpath:keystore.p12

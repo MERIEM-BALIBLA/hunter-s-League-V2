@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.*;
 
 
 @RestController
+@CrossOrigin
 @RequestMapping("/api/auth")
 @RequiredArgsConstructor
 public class AuthenticationController {
@@ -45,17 +46,5 @@ public class AuthenticationController {
         User user = loginMapper.ToUser(loginVM);
         return ResponseEntity.ok(service.verify(user));
     }
-
-//    @GetMapping("/csrf")
-//    public CsrfToken getCsrf(HttpServletRequest http) {
-//        return (CsrfToken) http.getAttribute("_csrf");
-////        return ResponseEntity.ok("welcome " + http.getAttribute("_csrf"));
-//    }
-
-//    @PostMapping("/login")
-//    public ResponseEntity<String> login(@RequestBody User user) {
-//        return ResponseEntity.ok("Welcome back " + user.getUsername());
-//    }
-
 
 }
